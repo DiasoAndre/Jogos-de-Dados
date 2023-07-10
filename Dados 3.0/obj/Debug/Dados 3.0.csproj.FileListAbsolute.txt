@@ -1,0 +1,16 @@
+U:\TPA\2º Bimestre\Dados 3.0\Dados 3.0\bin\Debug\Dados 3.0.exe.config
+U:\TPA\2º Bimestre\Dados 3.0\Dados 3.0\bin\Debug\Dados 3.0.exe
+U:\TPA\2º Bimestre\Dados 3.0\Dados 3.0\bin\Debug\Dados 3.0.pdb
+U:\TPA\2º Bimestre\Dados 3.0\Dados 3.0\obj\Debug\Dados 3.0.csprojResolveAssemblyReference.cache
+U:\TPA\2º Bimestre\Dados 3.0\Dados 3.0\obj\Debug\Dados_3._.MainForm.resources
+U:\TPA\2º Bimestre\Dados 3.0\Dados 3.0\obj\Debug\Dados 3.0.csproj.GenerateResource.Cache
+U:\TPA\2º Bimestre\Dados 3.0\Dados 3.0\obj\Debug\Dados 3.0.exe
+U:\TPA\2º Bimestre\Dados 3.0\Dados 3.0\obj\Debug\Dados 3.0.pdb
+C:\Users\André ETEC\OneDrive - Etec Centro Paula Souza\Etec\TPA\Dados 3.0\Dados 3.0\bin\Debug\Dados 3.0.exe.config
+C:\Users\André ETEC\OneDrive - Etec Centro Paula Souza\Etec\TPA\Dados 3.0\Dados 3.0\bin\Debug\Dados 3.0.exe
+C:\Users\André ETEC\OneDrive - Etec Centro Paula Souza\Etec\TPA\Dados 3.0\Dados 3.0\bin\Debug\Dados 3.0.pdb
+C:\Users\André ETEC\OneDrive - Etec Centro Paula Souza\Etec\TPA\Dados 3.0\Dados 3.0\obj\Debug\Dados 3.0.csprojResolveAssemblyReference.cache
+C:\Users\André ETEC\OneDrive - Etec Centro Paula Souza\Etec\TPA\Dados 3.0\Dados 3.0\obj\Debug\Dados_3._.MainForm.resources
+C:\Users\André ETEC\OneDrive - Etec Centro Paula Souza\Etec\TPA\Dados 3.0\Dados 3.0\obj\Debug\Dados 3.0.csproj.GenerateResource.Cache
+C:\Users\André ETEC\OneDrive - Etec Centro Paula Souza\Etec\TPA\Dados 3.0\Dados 3.0\obj\Debug\Dados 3.0.exe
+C:\Users\André ETEC\OneDrive - Etec Centro Paula Souza\Etec\TPA\Dados 3.0\Dados 3.0\obj\Debug\Dados 3.0.pdb

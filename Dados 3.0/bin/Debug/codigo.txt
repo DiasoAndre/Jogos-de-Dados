@@ -1,0 +1,392 @@
+/*
+ * Created by SharpDevelop.
+ * User: rm20232930075
+ * Date: 22/05/2023
+ * Time: 13:44
+ * 
+ * To change this template use Tools | Options | Coding | Edit Standard Headers.
+ */
+using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace jogo_Dados
+{
+	/// <summary>
+	/// Description of MainForm.
+	/// </summary>
+	public partial class MainForm : Form
+	{
+		// declaração das variáveis globais.
+		Random rnd = new Random ();
+		
+		public int n1, n2, n3, n4, n5; // números aleatórios
+		public int picn1, picn2, picn3, picn4, picn5; // números das pictureBox
+		public int placar_computador; // placar do computador
+		public int placar_player; // placar player
+		public int rodadas = 1; // número de rodada
+		public int soma_player; // soma de pontos do player
+		
+		
+		public MainForm()
+		{
+			//
+			// The InitializeComponent() call is required for Windows Forms designer support.
+			//
+			InitializeComponent();
+			
+
+			//
+			// TODO: Add constructor code after the InitializeComponent() call.
+			//
+		}
+		void MainFormLoad(object sender, EventArgs e)
+		{
+	
+		}
+		public void Button1Click(object sender, EventArgs e) // ao clicar nesse botão, inicia-se uma nova rodada
+		{
+			// atualiza as labels que contam a pontuação da rodada
+			label6.Text = "Computador";
+			label2.Text = "Player";
+			
+			button1.Enabled = false;
+			button2.Enabled = true;
+			// coloca o interrogação nas pictures do Computador
+			pictureBox1.Load("interrogação.png");
+			pictureBox2.Load("interrogação.png");
+			
+			// coloca interrogação nas pictures do jogador
+			dado3.Load("interrogação.png");
+			dado4.Load("interrogação.png");
+			dado5.Load("interrogação.png");
+			// Gera os números dos dados do jogador;
+			int n1 = rnd.Next(1,7);
+			picn1 = n1;
+			int n2 = rnd.Next(1,7);
+			picn2 = n2;
+			soma_player = n1 + n2;
+			Convert.ToString(soma_player);
+			label2.Text = "Player " + soma_player;
+			
+			
+			// atualiza a img dado1
+			if (n1==1)
+			{
+				dado1.Load("dado_1.png");
+			}
+			if (n1==2)
+			{
+				dado1.Load("dado_2.png");
+			}
+			if (n1==3)
+			{
+				dado1.Load("dado_3.png");
+			}
+			if (n1==4)
+			{
+				dado1.Load("dado_4.png");
+			}
+			if (n1==5)
+			{
+				dado1.Load("dado_5.png");
+			}
+			if (n1==6)
+			{
+				dado1.Load("dado_6.png");
+			}
+			
+			
+			// atualiza a img dado2
+			if (n2==1)
+			{
+				dado2.Load("dado_1.png");
+			}
+			if (n2==2)
+			{
+				dado2.Load("dado_2.png");
+			}
+			if (n2==3)
+			{
+				dado2.Load("dado_3.png");
+			}
+			if (n2==4)
+			{
+				dado2.Load("dado_4.png");
+			}
+			if (n2==5)
+			{
+				dado2.Load("dado_5.png");
+			}
+			if (n2==6)
+			{
+				dado2.Load("dado_6.png");
+			}
+			
+			dado1.Enabled = true;
+			dado2.Enabled = true;
+			dado4.Visible = false;
+			dado5.Visible = false;
+			
+		}
+		public void Dado3Click(object sender, EventArgs e)
+		{
+			int n3 = rnd.Next(1,7);
+			picn3 = n3;
+			soma_player += n3;
+			label2.Text = "Player " + soma_player;
+			// atualiza a img dado3
+			if (n3==1)
+			{
+				dado3.Load("dado_1.png");
+			}
+			if (n3==2)
+			{
+				dado3.Load("dado_2.png");
+			}
+			if (n3==3)
+			{
+				dado3.Load("dado_3.png");
+			}
+			if (n3==4)
+			{
+				dado3.Load("dado_4.png");
+			}
+			if (n3==5)
+			{
+				dado3.Load("dado_5.png");
+			}
+			if (n3==6)
+			{
+				dado3.Load("dado_6.png");
+			}
+			dado3.Enabled = true;
+			dado4.Visible = true;
+		}
+		public void Dado4Click(object sender, EventArgs e)
+		{
+			int n4 = rnd.Next(1,7);
+			picn4 = n4;
+			soma_player += n4;
+			label2.Text = "Player " + soma_player;
+			// atualiza a img dado4
+			if (n4==1)
+			{
+				dado4.Load("dado_1.png");
+			}
+			if (n4==2)
+			{
+				dado4.Load("dado_2.png");
+			}
+			if (n4==3)
+			{
+				dado4.Load("dado_3.png");
+			}
+			if (n4==4)
+			{
+				dado4.Load("dado_4.png");
+			}
+			if (n4==5)
+			{
+				dado4.Load("dado_5.png");
+			}
+			if (n4==6)
+			{
+				dado4.Load("dado_6.png");
+			}
+			dado4.Enabled = true;
+			dado5.Visible = true;
+		}
+		public void Dado5Click(object sender, EventArgs e)
+		{
+			int n5 = rnd.Next(1,7);
+			picn5 = n5;
+			soma_player += n5;
+			label2.Text = "Player " + soma_player;
+			// atualiza a img dado5
+			if (n5==1)
+			{
+				dado5.Load("dado_1.png");
+			}
+			if (n5==2)
+			{
+				dado5.Load("dado_2.png");
+			}
+			if (n5==3)
+			{
+				dado5.Load("dado_3.png");
+			}
+			if (n5==4)
+			{
+				dado5.Load("dado_4.png");
+			}
+			if (n5==5)
+			{
+				dado5.Load("dado_5.png");
+			}
+			if (n5==6)
+			{
+				dado5.Load("dado_6.png");
+			}
+			dado5.Enabled = true;
+		}
+		public void Button2Click(object sender, EventArgs e) // Finaliza a rodada
+		{
+
+			int ia_1Dado = rnd.Next(1,7);
+			int ia_2Dado = rnd.Next(1,7);
+			// atualiza a img dado1 do computador
+			if (ia_1Dado ==1)
+			{
+				pictureBox2.Load("dado_1.png");
+			}
+			if (ia_1Dado ==2)
+			{
+				pictureBox2.Load("dado_2.png");
+			}
+			
+			if (ia_1Dado ==3)
+			{
+				pictureBox2.Load("dado_3.png");
+			}
+			
+			if (ia_1Dado ==4)
+			{
+				pictureBox2.Load("dado_4.png");
+			}
+			
+			if (ia_1Dado ==5)
+			{
+				pictureBox2.Load("dado_5.png");
+			}
+			
+			if (ia_1Dado ==6)
+			{
+				pictureBox2.Load("dado_6.png");
+			}
+			
+			// atualiza a img dado2 do computador
+			if (ia_2Dado ==1)
+			{
+				pictureBox1.Load("dado_1.png");
+			}
+			if (ia_2Dado ==2)
+			{
+				pictureBox1.Load("dado_2.png");
+			}
+			
+			if (ia_2Dado ==3)
+			{
+				pictureBox1.Load("dado_3.png");
+			}
+			
+			if (ia_2Dado ==4)
+			{
+				pictureBox1.Load("dado_4.png");
+			}
+			
+			if (ia_2Dado ==5)
+			{
+				pictureBox1.Load("dado_5.png");
+			}
+			
+			if (ia_2Dado ==6)
+			{
+				pictureBox1.Load("dado_6.png");
+			}
+
+			dado3.Enabled = true;
+			dado4.Enabled = true;
+			dado5.Enabled = true;
+			
+			button1.Enabled = true;
+			button2.Enabled = false;
+			
+			// Soma os pontos do Computador
+			int soma_npc = ia_1Dado + ia_2Dado;
+			soma_player = (n1 + n2 + n3 + n4 + n5);
+			 
+			
+			// atualiza os pontos no placar Cinza 
+			label6.Text = "Computador " + soma_npc;
+			label2.Text = "Player " + soma_player;
+			
+			// Verifica as rodadas
+			if (rodadas == 5) { // se for a última rodada
+				if (placar_computador == 3) { // verifique o placar 
+					MessageBox.Show("Computador Venceu!!");
+				}
+				if (placar_player > placar_computador) {
+					MessageBox.Show("Você Venceu!!");
+				}
+				
+				pictureBox3.Visible = true; // picture do botão que Reinicia o jogo inteiro
+			}
+			else { // se a rodada não for a última
+				rodadas += 1;
+				label8.Text = rodadas + " Rodada";
+				
+				// Verifica se o player passou de 13 pontos
+				if (soma_player > 13) { 
+						placar_computador += 1;
+						label4.Text = "Computador " + placar_computador;
+						label2.Text = "Player " + soma_player;
+				}
+				
+				//Verifica se não houve empate, caso haja, o computador vence
+				if (soma_npc == soma_player) {
+					MessageBox.Show("O Computador Venceu");
+				}
+				if (soma_npc > soma_player) {
+					placar_computador += 1;
+					
+				}
+				else {
+					placar_player += 1;
+				}
+			}
+			label6.Text = "Computador " + soma_npc;
+			label6.Text = "Player " + soma_player;
+		}
+		public void Button3Click(object sender, EventArgs e) // reseta as variáveis e redefine tudo; Reinicia
+		{
+			button1.Enabled = true;
+			button2.Enabled = false;
+			pictureBox3.Visible = false;
+			// coloca o interrogação nas pictures do Computador
+			pictureBox1.Load("interrogação.png");
+			pictureBox2.Load("interrogação.png");
+			
+			// coloca interrogação nas pictures do jogador
+			dado1.Load("interrogação.png");
+			dado2.Load("interrogação.png");
+			dado3.Load("interrogação.png");
+			dado4.Load("interrogação.png");
+			dado5.Load("interrogação.png");
+			soma_player = 0;
+			placar_player = 0;
+			
+			dado4.Visible = false;
+			dado5.Visible = false;
+			
+			//soma_npc = 0;
+			placar_computador = 0;
+			
+			placar_computador = 0;
+			placar_player = 0;
+			rodadas = 0;
+			
+			// atualiza as labels
+			label8.Text = "1 Rodada";
+			label4.Text = "Computador";
+			label5.Text = "Player";
+			
+			
+			label6.Text = "Computador";
+			label2.Text = "Player";
+			
+			
+		}
+	}
+}

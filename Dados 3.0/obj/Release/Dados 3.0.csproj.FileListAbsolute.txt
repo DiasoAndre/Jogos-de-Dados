@@ -1,0 +1,6 @@
+C:\Users\André ETEC\OneDrive - Etec Centro Paula Souza\Etec\TPA\Dados 3.0\Dados 3.0\bin\Release\Dados 3.0.exe.config
+C:\Users\André ETEC\OneDrive - Etec Centro Paula Souza\Etec\TPA\Dados 3.0\Dados 3.0\bin\Release\Dados 3.0.exe
+C:\Users\André ETEC\OneDrive - Etec Centro Paula Souza\Etec\TPA\Dados 3.0\Dados 3.0\obj\Release\Dados 3.0.csprojResolveAssemblyReference.cache
+C:\Users\André ETEC\OneDrive - Etec Centro Paula Souza\Etec\TPA\Dados 3.0\Dados 3.0\obj\Release\Dados_3._.MainForm.resources
+C:\Users\André ETEC\OneDrive - Etec Centro Paula Souza\Etec\TPA\Dados 3.0\Dados 3.0\obj\Release\Dados 3.0.csproj.GenerateResource.Cache
+C:\Users\André ETEC\OneDrive - Etec Centro Paula Souza\Etec\TPA\Dados 3.0\Dados 3.0\obj\Release\Dados 3.0.exe
