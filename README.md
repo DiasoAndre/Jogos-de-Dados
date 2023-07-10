@@ -1,6 +1,6 @@
 # Jogos-de-Dados
-Um jogo de dados feito com C#
-O objetivo do jogo é juntar no máximo 13 pontos por rodada
+Um jogo de dados feito com C#.
+O objetivo do jogo é juntar pontos de acordo com a sua sorte, e compará-los aos pontos do computador.
   - Por rodada, você sorteia 5 dados, com números aletórios;
   - Os seus pontos são a soma dos números de seus dados;
   - O computador só consegue girar dois dados, que são mostrados na parte superior da janela do jogo;
